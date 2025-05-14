@@ -128,7 +128,8 @@
   (let ((filename (buffer-file-name)))
     (if (not filename)
         (message "Error: Buffer is not associated with a file")
-      ;; No longer automatically saving the file
+      ;; Save the file before running Betty
+      (save-buffer)
       
       ;; Run Betty command
       (let* ((cmd (concat betty-program-path " " (shell-quote-argument filename)))

@@ -20,10 +20,6 @@ If you're using a sandboxed education server, run the following command to clone
 
 git clone https://github.com/Abdulrahman9907/Enhanced-Emacs.git && cp /Enhanced-Emacs/.emacs ~/.emacs
 
-if you want to make emacs back to default settings run this command
-
-rm ~/.emacs
-
 ### Keyboard Shortcuts
 
 | Shortcut | Description |
