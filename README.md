@@ -8,6 +8,7 @@ This package provides real-time highlighting of Betty style violations, navigati
 
 ## Features
 
+- **Enhanced line numbering**: Display line numbers with customized styling and highlighting for the current line
 - **Real-time violation highlighting**: Immediately see Betty style violations with red highlighting
 - **Violation navigation**: Quickly jump between style errors in your code
 - **Integration with Betty checker**: Run the official Betty program directly from Emacs
@@ -22,8 +23,6 @@ This package provides real-time highlighting of Betty style violations, navigati
    (setq betty-program-path "/path/to/betty")
    ```
 3. Restart Emacs or evaluate the configuration
-
-## Usage
 
 ### Keyboard Shortcuts
 
@@ -40,8 +39,9 @@ This package provides real-time highlighting of Betty style violations, navigati
 
 ### Visual Indicators
 
+- **Line numbering**: Customized line numbers with current line highlighting (gold on dark background)
 - **Red highlighting**: Indicates a Betty style violation
-- **Mode line button**: Click "Betty" in the mode line to run the Betty checker
+- **integrated betty checker**: Click "Betty checker (C-c b)" in the mode line to run the Betty checker
 - **Minibuffer hints**: Shows help text when cursor is over a violation
 
 ### Violation Types Detected
@@ -55,27 +55,6 @@ The configuration highlights common Betty style violations including:
 - Function declarations with braces on the same line
 - Incorrect semicolon spacing
 
-## Customization
-
-### Disable automatic checking on save
-```elisp
-(setq betty-check-on-save nil)
-```
-
-### Change highlight color
-```elisp
-(custom-set-faces
- '(my-betty-warning-face ((t (:background "YOUR_COLOR_HERE")))))
-```
-
-## Troubleshooting
-
-- If the Betty executable is not being found, set the correct path using:
-  ```elisp
-  (setq betty-program-path "/full/path/to/betty")
-  ```
-- If highlighting is not working, try toggling it with `C-c x`
-- Check that you're in a C mode buffer (`c-mode` or `c++-mode`)
 
 ## Notes
 
@@ -87,6 +66,6 @@ The configuration highlights common Betty style violations including:
 
 - Use `C-c l` to display the shortcuts legend when needed
 - The Betty output panel shows clickable line references for easy navigation
-- Violations can be fixed manually or semi-automatically with `C-c d`
+- Violations can be Deleted manually or semi-automatically with `C-c d`
 
 Enjoy writing Betty-compliant code with less effort!
