@@ -15,14 +15,10 @@ This package provides real-time highlighting of Betty style violations, navigati
 - **Interactive fixes**: Delete spaces/tabs violations with a single command
 - **Customizable**: Enable/disable features as needed
 
-## Installation
+Installation
+If you're using a sandboxed education server, run the following command to clone the configuration and upload its settings to your sandbox:
 
-1. Copy the provided code into your Emacs configuration file (`~/.emacs`, `~/.emacs.d/init.el`, or similar)
-2. Ensure the `betty` executable is in your PATH or set the correct path in the configuration:
-   ```elisp
-   (setq betty-program-path "/path/to/betty")
-   ```
-3. Restart Emacs or evaluate the configuration
+git clone https://github.com/Abdulrahman9907/Enhanced-Emacs.git && cp Enhanced-Emacs/.emacs ~/.emacs
 
 ### Keyboard Shortcuts
 
