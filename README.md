@@ -18,20 +18,20 @@ This package provides real-time highlighting of Betty style violations, navigati
 Installation
 If you're using a sandboxed education server, run the following command to clone the configuration and upload its settings to your sandbox:
 
-git clone https://github.com/Abdulrahman9907/Enhanced-Emacs.git && cp Enhanced-Emacs/.emacs ~/.emacs
+git clone https://github.com/Abdulrahman9907/Enhanced-Emacs.git && cp /Enhanced-Emacs/.emacs ~/.emacs
 
 ### Keyboard Shortcuts
 
 | Shortcut | Description |
 |----------|-------------|
+| `C-c l`  | Show shortcuts legend |
+| `C-c d`  | Auto-Delete spaces/tabs violations |
+| `C-c u`  | Undo deletion of violations |
+| `C-c c`  | Count total violations in buffer |
 | `C-c n`  | Move to next style violation |
 | `C-c p`  | Move to previous style violation |
-| `C-c c`  | Count total violations in buffer |
-| `C-c d`  | Delete spaces/tabs violations |
-| `C-c u`  | Undo deletion of violations |
 | `C-c x`  | Toggle violation highlighting |
-| `C-c b`  | Run Betty checker (toggle panel) |
-| `C-c l`  | Show shortcuts legend |
+| `C-c b`  | Run Integrated Betty checker (toggle panel) |
 
 ### Visual Indicators
 
