@@ -51,8 +51,6 @@ The configuration highlights common Betty style violations including:
 - Tab characters
 - Missing spaces after commas
 - `return(...)` usage (should be `return (...)`
-- Braces not on new lines
-- Function declarations with braces on the same line
 - Incorrect semicolon spacing
 
 
