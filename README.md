@@ -18,12 +18,12 @@ This package provides real-time highlighting of Betty style violations, navigati
 Installation
 If you're using a sandboxed education server, run the following command to clone the configuration and upload its settings to your sandbox:
 
-Install Command 📥:
+Install Command 📥:  
 git clone https://github.com/Abdulrahman9907/Enhanced-Emacs.git && cp /Enhanced-Emacs/.emacs ~/.emacs
 
 if you want to make emacs back to default settings run this command
 
-Uninstall Command 📤:
+Uninstall Command 📤:  
 rm ~/.emacs
 
 
