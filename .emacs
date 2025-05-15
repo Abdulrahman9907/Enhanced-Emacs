@@ -1,5 +1,13 @@
+;; Author: Abdulrahman
+;; Created: May 2025
+;; Description:
+;; This package provides real-time highlighting of Betty style violations,
+;; navigation between errors, and integration with the official Betty style checker.
+;; It's designed to help students and developers write Betty-compliant C code more efficiently.
+
+
 ;; --------------------------------------------
-;; Line Numbers (Enabled by default in C)
+;; Line Numbers
 ;; --------------------------------------------
 
 (global-display-line-numbers-mode)
@@ -237,13 +245,13 @@
         (with-current-buffer buf
           (insert (propertize "Custom Shortcuts\n" 'face '(:foreground "yellow" :weight bold)))
           (dolist (key '(
-                         "C-c n — Next violation (highlighting)"
-                         "C-c p — Previous violation (highlighting)"
-                         "C-c c — Count violations (highlighting)"
-                         "C-c d — Delete spaces/tabs"
+                         "C-c d — Auto-Delete spaces/tabs"
                          "C-c u — Undo delete"
                          "C-c x — Toggle highlighting"
                          "C-c b — Run Betty checker (toggle)"
+                         "C-c n — Next violation (highlighting)"
+                         "C-c p — Previous violation (highlighting)"
+                         "C-c c — Count violations (highlighting)"
                          "C-c l — This legend"))
             (insert (concat "  " key "\n"))))))))
 
@@ -251,11 +259,11 @@
 ;; Keybindings
 ;; --------------------------------------------
 
-(global-set-key (kbd "C-c n") #'next-betty-violation)
-(global-set-key (kbd "C-c p") #'previous-betty-violation)
-(global-set-key (kbd "C-c c") #'count-betty-violations)
 (global-set-key (kbd "C-c d") #'delete-betty-spaces-and-tabs)
 (global-set-key (kbd "C-c u") #'undo-betty-deletion)
 (global-set-key (kbd "C-c x") #'toggle-betty-highlighting)
 (global-set-key (kbd "C-c b") #'toggle-betty-output-panel)
+(global-set-key (kbd "C-c n") #'next-betty-violation)
+(global-set-key (kbd "C-c p") #'previous-betty-violation)
+(global-set-key (kbd "C-c c") #'count-betty-violations)
 (global-set-key (kbd "C-c l") #'toggle-betty-shortcut-legend)
